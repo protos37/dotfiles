@@ -1,0 +1,8 @@
+[user]
+	name = Lee Hyeonseop
+	email = protos37@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[push]
+	default = simple
