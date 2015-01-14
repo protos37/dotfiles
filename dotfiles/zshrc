@@ -60,7 +60,7 @@ if [ -d "$HOME/bin" ]; then
 fi
 
 # Local settings if it exists
-if [ -e "$HOME/.zshrc_local" ]; then
+if [ -f "$HOME/.zshrc_local" ]; then
   source $HOME/.zshrc_local
 fi
 
