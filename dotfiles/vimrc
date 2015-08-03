@@ -41,6 +41,8 @@ set noexpandtab
 set smartindent
 set nowrap
 colorscheme solarized
+autocmd FileType c,cpp,java,python setlocal expandtab
+autocmd FileType html,php,js,css setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 autocmd VimEnter * NERDTree | wincmd p
 
