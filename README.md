@@ -9,5 +9,11 @@
 ```sh
 git clone https://github.com/protos37/shell-config
 cd shell-config
-./install.sh
+./install.sh <commands>
 ```
+
+Available commands:
+- git
+- vim
+- ycm
+- zsh
