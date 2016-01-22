@@ -8,12 +8,9 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'Solarized'
-
 Plugin 'The-NERD-tree'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/Conque-GDB'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,7 +44,6 @@ autocmd FileType c,cpp,java,python setlocal expandtab
 autocmd FileType html,php,js,css setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 autocmd VimEnter * NERDTree | wincmd p
-
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
 " Close all open buffers on entering a window if the only
 " buffer that's left is the NERDTree buffer

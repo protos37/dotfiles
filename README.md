@@ -7,13 +7,14 @@
 ## Install
 
 ```sh
-git clone https://github.com/protos37/shell-config
-cd shell-config
-./install.sh <commands>
+git clone https://github.com/protos37/dotfiles .dotfiles
+cd .dotfiles
+./install.sh
 ```
 
-Available commands:
-- git
-- vim
-- ycm
-- zsh
+Command option | Description
+---------------|-----------------------------------------------
+`link`         | Install miscellaneous
+`bash`         | Install general `bashrc`
+`zsh`          | Install antigen and `zshrc`
+`vim`          | Install Vundle and `vimrc`
