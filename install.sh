@@ -85,6 +85,12 @@ case "$1" in
     vim +PluginInstall +qall
     echo 'Done.'
     ;;
+  git)
+    read -p "Enter your name to be configured with git: " un
+    read -p "Enter your email to be configured with git: " um
+    git config --global --replace-all user.name "$un"
+    git config --global --replace-all user.email "$um"
+    ;;
   *)
     echo "usage: $(basename "$0") <command>"
     echo ''
@@ -93,4 +99,5 @@ case "$1" in
     echo '    bash    Install general bashrc'
     echo '    zsh     Install antigen and zshrc'
     echo '    vim     Install Vundle and vimrc'
+    echo '    git     Globally config git with name and email'
 esac
