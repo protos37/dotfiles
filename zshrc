@@ -1,5 +1,11 @@
 source $HOME/.antigen/antigen.zsh
 
+export LC_ALL=en_US.utf-8
+export LANG=en_US.utf-8
+
+LIME_SHOW_HOSTNAME=1
+LIME_DIR_DISPLAY_COMPONENTS=3
+
 antigen use oh-my-zsh
 
 antigen bundle yous/lime
@@ -7,12 +13,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle autojump
 
 antigen apply
-
-LIME_SHOW_HOSTNAME=1
-LIME_DIR_DISPLAY_COMPONENTS=3
-
-export LC_ALL=en_US.utf-8
-export LANG=en_US.utf-8
 
 function add_to_path_once()
 {
