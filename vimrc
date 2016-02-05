@@ -35,13 +35,13 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set scrolloff=4
-set noexpandtab
+set expandtab
 set smartindent
 set nowrap
 set mouse=a
 colorscheme solarized
-autocmd FileType c,cpp,java,python setlocal expandtab
-autocmd FileType html,php,js,css setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType php,javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType html,css setlocal noexpandtab tabstop=2 softtabstop=2 shiftwidth=2
 
 autocmd VimEnter * NERDTree | wincmd p
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
