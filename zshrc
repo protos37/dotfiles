@@ -31,6 +31,7 @@ if [ -d "$HOME/bin" ]; then
   add_to_path_once "$HOME/bin"
 fi
 
+alias tmux='tmux -2'
 
 if [ -f "$HOME/.zshrc.local" ]; then
   source $HOME/.zshrc.local

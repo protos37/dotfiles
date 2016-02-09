@@ -152,6 +152,8 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias tmux='tmux -2'
+
 
 # Source local bashrc
 if [ -f "$HOME/.bashrc.local" ]; then
