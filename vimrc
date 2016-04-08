@@ -31,17 +31,16 @@ syntax on
 set number
 set background=dark
 set backspace=2
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set scrolloff=4
 set expandtab
 set smartindent
 set nowrap
 set mouse=a
 colorscheme solarized
-autocmd FileType php,javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType html,css setlocal noexpandtab tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType html,css setlocal noexpandtab
 
 autocmd VimEnter * NERDTree | wincmd p
 autocmd WinEnter * call s:CloseIfOnlyNerdTreeLeft()
