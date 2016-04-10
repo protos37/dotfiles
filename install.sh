@@ -70,9 +70,10 @@ case "$1" in
     echo 'Done.'
     ;;
   zsh)
-    git_clone git://github.com/zsh-users/antigen.git .antigen
+    git_clone git://github.com/tarjoilija/zgen.git .zgen
     replace_file zshrc
     replace_dotfiles
+    zsh -i -c "zgen reset; zgen update"
     echo 'You can chagne your default shell with:'
     echo ''
     echo '    chsh -s `which zsh`'

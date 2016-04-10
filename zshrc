@@ -1,4 +1,5 @@
-source $HOME/.antigen/antigen.zsh
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
 
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
@@ -27,14 +28,15 @@ if [[ -d "$HOME/bin" ]]; then
   add_to_path_once "$HOME/bin"
 fi
 
-antigen use oh-my-zsh
-
-antigen bundle yous/lime
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle autojump
-antigen bundle pyenv
-
-antigen apply
+# if the init scipt doesn't exist
+if ! zgen saved; then
+  zgen oh-my-zsh
+  zgen oh-my-zsh plugins/autojump
+  zgen oh-my-zsh plugins/pyenv
+  zgen load yous/lime
+  zgen load zsh-users/zsh-syntax-highlighting
+  zgen save
+fi
 
 # Unset local functions
 unset -f add_to_path_once
