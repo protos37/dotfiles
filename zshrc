@@ -1,6 +1,3 @@
-# load zgen
-source "${HOME}/.zgen/zgen.zsh"
-
 export LC_ALL=en_US.utf-8
 export LANG=en_US.utf-8
 
@@ -27,6 +24,9 @@ fi
 if [[ -d "$HOME/bin" ]]; then
   add_to_path_once "$HOME/bin"
 fi
+
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
 
 # if the init scipt doesn't exist
 if ! zgen saved; then
