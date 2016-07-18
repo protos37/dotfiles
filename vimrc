@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Solarized'
 Plugin 'The-NERD-tree'
+Plugin 'hdima/python-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -40,6 +41,7 @@ set smartindent
 set nowrap
 set mouse=a
 colorscheme solarized
+autocmd FileType python setlocal shiftwidth=4
 autocmd FileType html,css setlocal noexpandtab
 
 autocmd VimEnter * NERDTree | wincmd p
