@@ -35,7 +35,6 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/pyenv
   zgen load yous/lime
   zgen load zsh-users/zsh-syntax-highlighting
-  zgen save
 fi
 
 # Unset local functions
@@ -45,4 +44,9 @@ alias tmux='tmux -2'
 
 if [[ -f "$HOME/.zshrc.local" ]]; then
   source $HOME/.zshrc.local
+fi
+
+# if the init scipt doesn't exist
+if ! zgen saved; then
+  zgen save
 fi
