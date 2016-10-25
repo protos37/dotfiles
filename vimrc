@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Solarized'
 Plugin 'The-NERD-tree'
 Plugin 'hdima/python-syntax'
+Plugin 'rust-lang/rust.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -39,6 +40,9 @@ set scrolloff=4
 set expandtab
 set smartindent
 set nowrap
+set ruler
+set incsearch
+set hlsearch
 set mouse=a
 colorscheme solarized
 autocmd FileType python setlocal shiftwidth=4

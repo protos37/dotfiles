@@ -32,7 +32,6 @@ source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
   zgen oh-my-zsh
   zgen oh-my-zsh plugins/autojump
-  zgen oh-my-zsh plugins/pyenv
   zgen load yous/lime
   zgen load zsh-users/zsh-syntax-highlighting
 fi
