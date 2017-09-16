@@ -14,6 +14,13 @@ if [[ "$(uname)" == 'Darwin' ]]; then
 fi
 
 # Load Linuxbrew
+if [[ -d "/home/linuxbrew/.linuxbrew" ]]; then
+  add_to_path_once "/home/linuxbrew/.linuxbrew/bin"
+  export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+fi
+
+# Load Linuxbrew
 if [[ -d "$HOME/.linuxbrew" ]]; then
   add_to_path_once "$HOME/.linuxbrew/bin"
   export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
