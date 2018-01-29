@@ -41,6 +41,10 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/autojump
   zgen load yous/lime
   zgen load zsh-users/zsh-syntax-highlighting
+  if whence fzf >/dev/null; then
+    zgen load junegunn/fzf shell/completion.zsh
+    zgen load junegunn/fzf shell/key-bindings.zsh
+  fi
 fi
 
 # Unset local functions
