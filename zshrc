@@ -38,7 +38,6 @@ source "${HOME}/.zgen/zgen.zsh"
 # if the init scipt doesn't exist
 if ! zgen saved; then
   zgen oh-my-zsh
-  zgen oh-my-zsh plugins/autojump
   zgen load yous/lime
   zgen load zsh-users/zsh-syntax-highlighting
   if whence fzf >/dev/null; then
